@@ -16,6 +16,9 @@ spec:
     spec:
       containers:
       - name: fastapi
-        image: fastapi:0.116.1
+        image: danielgevafisher/mongo-crud:latest
         ports:
-        - containerPort: 80
+        - containerPort: 8000
+        env:
+        - name: MONGO_URI
+          value: "mongodb://mongo-service:27017"

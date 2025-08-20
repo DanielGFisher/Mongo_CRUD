@@ -8,5 +8,5 @@ spec:
     app: mongo
   ports:
     - protocol: TCP
-      port: 80
-      targetPort: 9376
+      port: 27017
+      targetPort: 27017
