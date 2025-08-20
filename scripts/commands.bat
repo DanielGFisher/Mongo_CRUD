@@ -18,6 +18,6 @@ oc apply -f infrastructure/k8s/fastapi-service.yaml
 oc apply -f infrastructure/k8s/fastapi-route.yaml
 
 Verify:
-oc get all po
-oc get all svc
-oc get all deploy
+oc get po
+oc get svc
+oc get deploy

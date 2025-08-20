@@ -3,7 +3,7 @@ from dal import SoldierDAL
 from soldier import Soldier
 
 app = FastAPI(title="Enemy Soldiers API")
-dal = SoldierDAL(uri="mongodb://mongo:27017")  # in Docker/Openshift use "mongo" as hostname
+dal = SoldierDAL(uri="mongodb://mongo:27017")
 
 @app.get("/soldiersdb/")
 def get_soldiers():
